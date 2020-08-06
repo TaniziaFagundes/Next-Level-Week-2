@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tanizia Fagundes" />
+    <meta name="description"  content="estudo da semana next level week #02 da rocketseat">
+    <meta name="keywords" content="palavras,chaves,separadas,por,virgula">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css" >
+    <link rel="stylesheet" href="./css/partials/page-study.css"
+    
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body id="page-study">
+    <div id="container">
+
+        <header class="page-header">
+
+            <div class="top-bar-container">
+                <a href="/index.html">
+                    <img src="/images/icons/volte.svg" alt="Voltar">
+                </a>
+                <img src="/images/logo.svg" alt="Proffy">
+            </div>
+
+            <div class="header-content">
+                <strong>Esses são os proffys disponíveis</strong> <!--tag para text com pre definição negrito-->
+                <form id="search-teachers">
+                   <div class="select-block">
+                        <label for="subject">Matéria</label>
+                        <select name="subject"  id="subject">
+                            <option value="" disabled="" hidden="">Selecione uma opção</option>
+                            <option value="1">Artes</option>
+                            <option value="2">Biologia</option>
+                            <option value="3">Ciências</option>
+                            <option value="4">Educação física</option>
+                            <option value="5">Física</option>
+                            <option value="6">Geografia</option>
+                            <option value="7">História</option>
+                            <option value="8">Matemática</option>
+                            <option value="9">Português</option>
+                            <option value="10">Química</option>
+                        </select><!--select id="subject"-->
+                   </div><!--select-block-->
+
+                   <div class="select-block">
+                        <label for="weekday">Dia da semana</label>
+                        <select name="weekday"  id="weekday">
+                            <option value="" disabled="" hidden="">Selecione uma opção</option>
+                            <option value="1">Domingo</option>
+                            <option value="2">Segunda-feira</option>
+                            <option value="3">Terça-feira</option>
+                            <option value="4">Quarta-feira</option>
+                            <option value="5">Quinta-feira</option>
+                            <option value="6">Sexta-feira</option>
+                            <option value="7">Sábado</option>
+                        </select><!--select id="weekday"-->
+                    </div><!--select-block-->
+
+                    <div class="input-block">
+                        <label for="time">Hora</label>
+                        <input name="time" id="name" type="time" /> <!--type="number" min="0" max="24"-->
+                    </div>
+                    <button type="submit">Filtrar</button>
+                </form><!--search-teachers-->
+            </div><!--header-content-->
+        </header><!--page-header-->
+
+        <main>
+            <article class="teacher-item">
+                <header>
+                    <img src="https://avatars1.githubusercontent.com/u/51212859?s=400&u=d3a448dd722c66cafa7f10bd79a54cc9bd870299&v=4" alt="Tanizia Fagundes"/>
+                    <div>
+                        <strong>Tanizia Fagundes</strong>
+                        <span>Geografia</span>
+                    </div>
+                </header>
+                <p>Quisque faucibus massa quis porta facilisis.<br><br> Nullam suscipit nunc nec nisl euismod rutrum. Morbi hendrerit lacus sit amet egestas dapibus. Nullam iaculis urna nisl, id dictum metus maximus in. Maecenas vestibulum, eros eget semper volutpat, libero odio molestie mauris, at imperdiet libero turpis vel lectus. Nunc mollis tortor id condimentum porta</p>
+                <footer>
+                    <p>Preço/hora<strong>R$ 20,00</strong></p>
+                    <button type="button"><img src="/images/icons/whatsapp.svg" alt="Whatsapp">Entrar em Contato</button>
+                </footer>
+            </article>
+
+            <article class="teacher-item">
+                <article >
+                <header>
+                    <img src="https://avatars1.githubusercontent.com/u/51212859?s=400&u=d3a448dd722c66cafa7f10bd79a54cc9bd870299&v=4" alt="Tanizia Fagundes"/>
+                    <div>
+                        <strong>Tanizia Fagundes</strong>
+                        <span>Geografia</span>
+                    </div>
+                </header>
+                <p>Quisque faucibus massa quis porta facilisis.<br><br> Nullam suscipit nunc nec nisl euismod rutrum. Morbi hendrerit lacus sit amet egestas dapibus. Nullam iaculis urna nisl, id dictum metus maximus in. Maecenas vestibulum, eros eget semper volutpat, libero odio molestie mauris, at imperdiet libero turpis vel lectus. Nunc mollis tortor id condimentum porta</p>
+                <footer>
+                    <p>Preço/hora<strong>R$ 20,00</strong></p>
+                    <button type="button"><img src="/images/icons/whatsapp.svg" alt="Whatsapp">Entrar em Contato</button>
+                </footer>
+            </article>
+        </main>
+    </div><!--container-->
+</body>
+</html>
