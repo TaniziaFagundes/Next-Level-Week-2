@@ -3,6 +3,51 @@
     height: 100vh;
 }
 
+<<<<<<< HEAD
+=======
+.page-header{
+    background-color: var(--color-primary);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header .top-bar-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 0;
+}
+
+.page-header .top-bar-container img{
+    height: 3rem;
+}
+
+.page-header .top-bar-container a {
+    height: 3.2rem;
+    transition: opacity 0.2s;
+}
+
+.page-header .top-bar-container a:hover {
+    opacity: 0.6;
+}
+
+.page-header .header-content{
+    width: 90%;
+    margin: 3.2rem auto;
+
+    position: relative; /*para fazer o efeito de sobreposição do form*/
+}
+
+.page-header .header-content strong{
+    font: 700 3.6rem Archivo;
+    line-height: 4.2rem;
+    color: var(--color-title-in-primary);
+}
+
+>>>>>>> 5e3b2654bfce5f45bd638782bf14993c98cc505e
 #search-teachers{
     margin-top: 3.2rem;
 }
@@ -29,14 +74,56 @@
     justify-content: center;
     text-decoration: none;
     transition: background 0.2s;
+<<<<<<< HEAD
     margin-top: 3.2rem;
+=======
+    margin-top: 2.6rem;
+>>>>>>> 5e3b2654bfce5f45bd638782bf14993c98cc505e
 }
 
 #search-teachers button:hover{
     background-color: var(--color-secondary-dark);
 }
 
+<<<<<<< HEAD
 
+=======
+.select-block label,
+.input-block label{
+    font-size: 1.4rem;
+    color: var(--color-text-complement);
+}
+
+.input-block input,
+.select-block select{
+    width: 100%;
+    height: 5.6rem;
+    margin-top: 0.8rem;
+    border-radius:0.8rem;
+    background: var(--color-input-background);
+    border: 1px solid var(--color--line-in-white);
+    outline: 0;
+    padding: 0 1.6rem;
+    font: 1.6rem Archivo;
+}
+
+.input-block{
+    position: relative; /*para usar o position absolute em focus-within*/
+}
+
+.input-block:focus-within::after{
+    content: ""; /*obrigatorio para usar o focus-within*/
+
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    background: var(--color-primary-light);
+
+    position: absolute;
+    left: 1.6rem;
+    right: 1.6rem;
+    bottom:0;
+}
+>>>>>>> 5e3b2654bfce5f45bd638782bf14993c98cc505e
 
 #page-study main{
     margin: 3.2rem auto;
@@ -45,7 +132,11 @@
 
 .teacher-item{
     background-color: var(--color-box-base);
+<<<<<<< HEAD
     border: 1px solid var(--color-line-in-white);
+=======
+    border: 1px solid var(--color--line-in-white);
+>>>>>>> 5e3b2654bfce5f45bd638782bf14993c98cc505e
     border-radius: .8rem;
     margin-top: 2.4rem;
 }
@@ -79,7 +170,11 @@
     margin-top: .4rem;
 }
 
+<<<<<<< HEAD
 .teacher-item  p{
+=======
+.teacher-item > p{
+>>>>>>> 5e3b2654bfce5f45bd638782bf14993c98cc505e
     padding: 0 2rem;
     font-size: 1.9rem;
     line-height: 2.8rem;
@@ -88,7 +183,11 @@
 .teacher-item footer{
     padding: 3.2rem 2rem;
     background-color: var(--color-box-footer);
+<<<<<<< HEAD
     border-top: 1px solid var(--color-line-in-white);
+=======
+    border-top: 1px solid var(--color--line-in-white);
+>>>>>>> 5e3b2654bfce5f45bd638782bf14993c98cc505e
     margin-top: 3.2rem;
 
     display: flex;
@@ -183,7 +282,11 @@
         margin-bottom: 0;
     }
 
+<<<<<<< HEAD
     .teacher-item  p{
+=======
+    .teacher-item > p{
+>>>>>>> 5e3b2654bfce5f45bd638782bf14993c98cc505e
         padding: 0 32px;
     }
     
