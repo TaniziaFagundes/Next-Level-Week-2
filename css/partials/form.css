@@ -2,7 +2,15 @@
 .select-block label,
 .input-block label,
 .textarea-block label{
-    font-size: 1.9rem;
+    font-size: 1.6rem;
+    color: var(--color-text-complement);
+
+}
+
+.select-block option,
+.input-block option,
+.textarea-block option{
+    font-size: 1.6rem;
     color: var(--color-text-complement);
 
 }
@@ -25,29 +33,6 @@
     padding: 1.2rem 1.6rem;
     height: 16rem;
     resize: vertical; /*text area fixo na horizontal*/
-}
-
-#page-give-classes fieldset{
-    border: none;
-}
-
-#page-give-classes main{
-    padding:6.5rem;
-}
-
-#page-give-classes fieldset legend{
-    font: 700 2.9rem Archivo;
-    color: var(--color-text-title);
-    margin-bottom: 2.4rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 100%;
-
-    padding-bottom: 1.6rem;
-    border-bottom: 1px solid var(--color-line-in-white);
 }
 
 .input-block,

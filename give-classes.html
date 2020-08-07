@@ -16,6 +16,8 @@
     <meta name="theme-color" content="#8257E5">
     <title>Proffy | Sua plataforma de estudos online</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+
+    <script src="./script/addField.js" defer></script> <!--sem o defer ele dá erro pois html lê linha a linha, só pode retirar o defer se a tag script estiver no final do codigo-->
 </head>
 
 <body id="page-give-classes">
@@ -77,7 +79,7 @@
                         </select>
                     </div>
 
-                    <div class="input.block">
+                    <div class="input-block">
                         <label for="cust">Custo da sua hora/aula
                             <small>(R$)</small>
                         </label>
@@ -86,15 +88,16 @@
 
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="schedule-id">
                     <legend>Horários disponíveis
-                        <button id="add-time">+ Novo Horário</button>
+                        <button type="button" id="add-time">+ Novo Horário</button> <!--usar o type button, se não ele vai querer submeter o formulario-->
                     </legend>
 
                     <div class="schedule-item">
                         <div class="select-block">
                             <label for="weekday">Dia da semana</label>
                             <select name="weekday[]" required>
+                                <option value="">Selecione uma opção</option>
                                 <option value="1">Domingo</option>
                                 <option value="2">Segunda-feira</option>
                                 <option value="3">Terça-feira</option>
