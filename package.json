@@ -1,0 +1,23 @@
+{
+  "name": "Nlw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/serve.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaniziaFagundes/Next-Level-Week-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaniziaFagundes/Next-Level-Week-2/issues"
+  },
+  "homepage": "https://github.com/TaniziaFagundes/Next-Level-Week-2#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
