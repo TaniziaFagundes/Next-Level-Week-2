@@ -49,7 +49,6 @@ const weekdays =
 ]
 
 //funcionalidades
-
 function pageLanding(req , res){
     return res.render("index.html",{proffys})
 }
