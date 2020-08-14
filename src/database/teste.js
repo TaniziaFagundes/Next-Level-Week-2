@@ -12,7 +12,7 @@ Database.then( async (db) => {  //async pois estou usando await na chamada de fu
     }
 
     classValue = {
-        subject: "Geografia",
+        subject: "1",
         cust:"20"
     }
 
@@ -23,11 +23,40 @@ Database.then( async (db) => {  //async pois estou usando await na chamada de fu
             time_to:1220
         },
         {
-            weekday: 0,
+            weekday: 1,
             time_from: 520,
             time_to:1220
         }
     ]
 
-    await createProffy(db, {proffyValue, classValue, classScheduleValues})
+    //await createProffy(db, {proffyValue, classValue, classScheduleValues})
+
+    const selectedProffys = await db.all("SELECT * FROM proffys")
+    //console.log(selectedProffys)
+    
+    //consultar as classes de um determinado professor 
+    //e trazer junto os dados do professor
+
+    const selectClasseseAndProffys = await db.all(`
+        SELECT classes.* , proffys.* 
+        FROM proffys
+        JOIN classes ON (proffys.id = classes.proffy_id)
+        WHERE classes.proffy_id = 1;
+    `)
+
+   // console.log(selectClasseseAndProffys)
+
+   //horario que a pessoa trabalha por exemplo é das 8h -18h
+   //o horario do time_from(8h) precisa ser menor ou igual ao horario solicitado
+   //o time_to precisa ser acima
+   const selectClassesSchedules = await db.all(`
+        SELECT class_schedule.*
+        FROM class_schedule
+        WHERE class_schedule.class_id = 1
+        AND class_schedule.weekday = "0"
+        AND class_schedule.time_from <= "520"
+        AND class_schedule.time_to > "520" 
+    `)
+
+    console.log(selectClassesSchedules)
 })

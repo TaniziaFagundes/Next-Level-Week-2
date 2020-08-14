@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/serve.js" 
+    "test": ""
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,9 @@
     "url": "https://github.com/TaniziaFagundes/Next-Level-Week-2/issues"
   },
   "homepage": "https://github.com/TaniziaFagundes/Next-Level-Week-2#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.4"
+  "dependencies": {
+    "async": "^3.2.0",
+    "express": "^4.17.1",
+    "sqlite-async": "^1.1.0"
   }
 }

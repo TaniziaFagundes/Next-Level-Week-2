@@ -14,7 +14,7 @@ function execute(db){
 
         CREATE TABLE IF NOT EXISTS classes(
             id INTEGER PRIMARY  KEY AUTOINCREMENT,
-            subject TEXT,
+            subject INTERGER,
             cust TEXT,
             proffy_id INTEGER 
         );
