@@ -5,7 +5,8 @@ const serve = express()
 const {
     pageLanding,
     pageStudy,
-    pageGiveClasses
+    pageGiveClasses,
+    saveClasses 
 }  = require('./pages')
 
 //configurar nunjucks (template engine)
@@ -15,12 +16,18 @@ nunjucks.configure('src/views', {
     noCache: true
 })
 
+serve
+//receber os dados do req.body
+.use(express.urlencoded({extended :  true}))
+
+
 //configurar arquivos estáticos (css, scripts, imgens)
-serve.use(express.static("public"))
+.use(express.static("public"))
 //rotas da aplicação
 .get("/index", pageLanding)
-.get("/give-classes", pageGiveClasses)
 .get("/study", pageStudy)
+.get("/give-classes", pageGiveClasses)
+.post("/save-classes", saveClasses)
 
 .listen(5500)
 
